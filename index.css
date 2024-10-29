@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    padding: 30px;
+    margin-top: 30px;
+    display: flex;
+    width: 800px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Sidebar */
+.sidebar {
+    width: 35%;
+    background-color: #8bafa8;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.profile-info h2 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.profile-info p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.profile-details,
+.contact-info {
+    margin-top: 20px;
+}
+
+.profile-details h3,
+.contact-info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.main-content {
+    width: 65%;
+    background-color: #f8f4f0;
+    padding: 30px;
+    color: #333;
+}
+
+.main-content h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #4a4a4a;
+}
+
+.main-content section {
+    margin-bottom: 20px;
+}
+
+.main-content section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.main-content section strong {
+    font-weight: bold;
+}
