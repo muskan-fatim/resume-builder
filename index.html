@@ -3,56 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume Layout</title>
+    <title>Resume Builder</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div class="container">
-        <!-- Sidebar Section -->
-        <aside class="sidebar">
-        
-            <div class="profile-info">
-                <h2>Muskan Fatima</h2>
-                <p>Student</p>
-                <section class="profile-details">
-                    <h3>Profile</h3>
-                    <p>computer science student<br>
-                    I consider myself a responsible and orderly person.<br>
-                    I am looking forward to my first work experience.</p>
-                </section>
-                <section class="contact-info">
-                    <h3>Contact Me</h3>
-                    <p><strong>📞</strong> (123) 456-7890</p>
-                    <p><strong>📧</strong>mushiifatima3456@gmail.com</p>
-                    <p><strong>📍</strong> 123 Anywhere St., Any City, State, Country 12345</p>
-                </section>
-            </div>
-        </aside>
+    <div class="form-container">
+        <h1>Resume Builder</h1>
 
-        <main class="main-content">
-            <section>
-                <h3>Education</h3>
-                <p><strong>GIAIC:</strong><br>
-                Software develpoment carrer , in progress</p>
-                <p><strong>Degree College</strong><br>
-                    BSC in progress 
-                </p>
+        <label for="name">Name:</label>
+        <input id="name" type="text" placeholder="Enter your full name">
 
-            </section>
-            <section>
-                <h3>Language</h3>
-                <p>Native Urdu.<br>Advanced English.</p>
-            </section>
-            <section>
-                <h3>Computer Skills</h3>
-                <p>HTML.<br>CSS.<br>Typescript.<br>Next.js.<br>python<br>Tailwind css</p>
-            </section>
-            <section>
-                <h3>contribution Experience</h3>
-                <p><strong> Gssoc (girl summer script program )</strong><br>
-                Participation as contributor and take hands on experience and explore the developer code.</p>
-            </section>
-        </main>
+        <label for="father">Father's Name:</label>
+        <input id="father" type="text" placeholder="Enter your father's name">
+
+        <label for="contact">Contact:</label>
+        <input id="contact" type="text" placeholder="Enter your phone number">
+
+        <label for="email">Email:</label>
+        <input id="email" type="email" placeholder="Enter your email">
+
+        <label for="address">Address:</label>
+        <input id="address" type="text" placeholder="Enter your address">
+
+        <label for="college">College/University:</label>
+        <input id="college" type="text" placeholder="Enter your college or university name">
+
+        <label for="describe1">Description (1):</label>
+        <input id="describe1" type="text" placeholder="Brief description of your studies">
+
+        <label for="college2">Second College/University:</label>
+        <input id="college2" type="text" placeholder="Enter second college or university name (optional)">
+
+        <label for="describe2">Description (2):</label>
+        <input id="describe2" type="text" placeholder="Brief description of your studies at second college">
+
+        <label for="skills">Skills:</label>
+        <input id="skills" type="text" placeholder="List your skills separated by commas">
+
+        <label for="field_of_study">Field of Study:</label>
+        <input id="field_of_study" type="text" placeholder="Enter your field of study">
+
+        <label for="experience">Experience:</label>
+        <textarea id="experience" rows="3" placeholder="Describe your experience"></textarea>
+
+        <div class="button-container">
+            <button onclick="createResume()">Create Resume</button>
+        </div>
     </div>
+
+    <div id="resume" class="resume-container"></div>
+
+    <script src="index.js"></script>
 </body>
 </html>
