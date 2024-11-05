@@ -11,6 +11,7 @@ body {
     justify-content: center;
     align-items: flex-start;
     min-height: 100vh;
+    padding: 15px;
 }
 
 .form-container {
@@ -215,3 +216,84 @@ button:active {
         max-width: 800px;
     }
 }
+
+
+.form-container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    margin: 20px auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 25px;
+    font-size: 1.6em;
+}
+
+/* Flex Container for Content and Sidebar */
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    margin-top: 20px;
+    max-width: 100%;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #fff;
+    gap: 15px;
+}
+
+.sidebar {
+    background-color: rgb(240, 188, 111);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.main-content {
+    background-color: #f8f4f0;
+    padding: 15px;
+    color: #333;
+    border-radius: 10px;
+    overflow-wrap: break-word; /* Ensures text doesn't overflow */
+}
+
+/* Responsive Styles */
+@media (max-width: 576px) {
+    .container {
+        padding: 10px;
+    }
+    
+    h1 {
+        font-size: 1.4em;
+    }
+
+    .sidebar,
+    .main-content {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+    }
+    .sidebar {
+        flex: 1;
+        max-width: 300px;
+    }
+    .main-content {
+        flex: 2;
+    }
+}
+
